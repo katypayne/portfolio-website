@@ -41,3 +41,59 @@ img {
     width: 100%;
     height: auto;
 }
+
+
+a:visited {
+    color: #00001c;
+}
+a:hover {
+    color: #98c4cb;
+    text-decoration: underline;
+}
+a:active {
+    color: #f4d58d;
+}
+a:focus {
+    color: #00001c;
+    text-decoration: underline;
+}
+
+.button {
+    display:inline-block;
+    background-color: #2e5266;
+    color: #fffff5;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px;
+    border-bottom: 2px solid 98c4cb;
+    border-radius: 3px;
+    transition: 0.2s opacity;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button:active {
+    background-color: #98c4cb;
+    color: #2e5266;
+}
+.button:focus {
+    background-color: #00001c;
+    color: #2e5266;
+}
+.button.contact {
+    background-color: transparent;
+    color: #2e5266;
+    text-transform: uppercase;
+    border: 2px solid #2e5266;
+}
+.button.contact:hover {
+    background-color: #2e5266;
+    color: #fffff5;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: auto;
+}
