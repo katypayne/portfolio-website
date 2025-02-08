@@ -20,8 +20,13 @@
 <body>
     <!--For the header-->
     <header>
-        <div>
-            <a href="index.html"><b>Katy Payne-Djale</b></a>
+        <div class="container">
+            <a href="index.html">
+                <picture class="logo">
+                    <source srcset="./img/logos_palatte/logo_small.png" media="(max-width:767px)">
+                    <img src="./img/logos_palatte/logo_large.png" alt="my logo">
+                </picture>
+            </a>
             <nav>
                 <ul>
                     <li><a href="about.html">About</a></li>
@@ -32,8 +37,8 @@
         </div>
     </header>
     <main>
-        <div><!--Hero Block-->
-            <div><!--Hero Wrapper-->
+        <div id="hero"><!--Hero Block-->
+            <div class="container"> <!--Hero Wrapper-->
                 <h1>Hi! My name is Katy Payne-Djale.
                     <span>Thanks for viewing my UX/UI Design Portfolio!</span>
                 </h1>
@@ -42,11 +47,11 @@
             </div><!--End Hero Wrapper-->
         </div><!--End Hero Block-->
 
-        <div><!--Work Block-->
-            <div><!--Work Wrapper-->
+        <div id="work"><!--Work Block-->
+            <div class="container"><!--Work Wrapper-->
                 <h2>My Projects</h2>
-                <div><!--Open Expert row-->
-                    <div><!--Picture Column-->
+                <div class="row"><!--Open Expert row-->
+                    <div class="row"><!--Picture Column-->
                         <picture>
                             <source srcset="./img/project_expert_images/expert-banner-small.png"
                                 media="(max-width:767px)">
@@ -60,12 +65,14 @@
                             of niches via text, image, or video chat, and can save their conversations to refer back to
                             later.</p>
                         <p>Tools: Figma</p>
+
                         <a href="expert.html" class="button">Expert Advice App</a><!--Link to specific project page-->
+
                     </div><!--End text column-->
                 </div><!--End of open Expert row-->
 
-                <div><!--Open Vocab row-->
-                    <div><!--Picture Column-->
+                <div id="work"><!--Open Vocab row-->
+                    <div class="container"><!--Picture Column-->
                         <picture>
                             <source srcset="./img/project_vocab_images/vocab-banner-small.png"
                                 media="(max-width:767px)">
@@ -86,7 +93,7 @@
     </main>
 
     <footer id="contact"><!--Footer Block-->
-        <div><!--Footer wrapper-->
+        <div class="container"><!--Footer wrapper-->
             <h2>Connect With Me</h2>
             <p>Would you like to work together on your upcoming project? <a href="mailto:katy.payne412@yahoo.com"
                     class="button contact">Email
