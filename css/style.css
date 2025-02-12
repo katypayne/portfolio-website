@@ -136,6 +136,12 @@ img {
     padding-bottom: 25px; 
     border-bottom: 1px solid #fffff5; 
 }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #hero h1 {
     text-align: center; /* Centers text */
     color: #00001c;
@@ -197,6 +203,7 @@ nav > ul > li > a:focus {
     padding: 20px 0;
     display: inline-block
     width: 100%;
+    text-align: center;
 }
 
 /*Media Queries*/
@@ -209,7 +216,7 @@ nav > ul > li > a:focus {
     nav {
         width: auto;
         float: right;
-        margin-top:4px;
+        margin-top:4px
     }
     .col-md-6 {
         width: 50%;
@@ -221,4 +228,8 @@ nav > ul > li > a:focus {
     
     /*Extra large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
     }
