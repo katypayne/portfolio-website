@@ -13,7 +13,6 @@ Yellow: f4d58d
 header {
     background-color: fffff5;
     color: #fffff5;
-    padding: 10px 0;
     text-align: center;
 }
 .css-box-shadow {
@@ -160,7 +159,6 @@ img {
 nav {
     background-color: #fffff5;
     color: #00001c;
-    padding: 10px 0;
     text-align: center;
     display: inline-block;
     width: 100%;
@@ -206,6 +204,7 @@ nav > ul > li > a:focus {
 @media only screen and (min-width: 640px) {
     header {
         text-align: unset;
+        padding: 13px 0 13px;
     }
     nav {
         width: auto;
@@ -215,9 +214,11 @@ nav > ul > li > a:focus {
     .col-md-6 {
         width: 50%;
     }
+}
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
     }
+    
     /*Extra large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
     }
