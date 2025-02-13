@@ -53,6 +53,7 @@ h2 {
     font-size: 1.75em;
     font-weight: 700;
     color: #00001c;
+  
 }
 h3 {
     font-size: 1.5em;
@@ -201,7 +202,7 @@ nav > ul > li > a:focus {
     background-color: #fffff5;
     color: #00001c;
     padding: 20px 0;
-    display: inline-block
+    display: inline-block;
     width: 100%;
     text-align: center;
 }
