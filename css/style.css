@@ -54,6 +54,7 @@ h2 {
     font-size: 1.75em;
     font-weight: 700;
     color: #00001c;
+    text-align:center;
   
 }
 h3 {
@@ -70,6 +71,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 
 
 a:visited {
@@ -93,15 +95,18 @@ a:focus {
     color: #fffff5;
     font-size: 1em;
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-bottom: 2px solid 98c4cb;
     border-radius: 3px;
     transition: 0.2s opacity;
-    cursor: pointer;
+   
+
 }
 .button:hover {
     opacity: 0.8;
     text-decoration: none;
+    background-color: #f4d58d;
 }
 .button:active {
     background-color: #98c4cb;
@@ -126,8 +131,50 @@ img {
     width: 100%;
     height: auto;
 }
+/*Animation Styling*/
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.sun{
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+
+.cloud-front{
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back{
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes color-change {
+    0% {fill:#edc655}
+    50% {fill:#fcffad}
+    100% {fill:#f76414}
+}
+
+@keyframes cloud-move {
+   from {transform: translate(0,50px);}
+   to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px,48px);}
+}
+
+
+
 /* Layout styliing */ 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -137,11 +184,6 @@ img {
 #work .row { 
     padding-bottom: 25px; 
     border-bottom: 1px solid #fffff5; 
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 #hero h1 {
@@ -153,6 +195,7 @@ img {
 #hero span {
     display: block;
 }
+#about-page h3 {margin-top: 0;}
 
 .center{
     text-align: center;
@@ -207,6 +250,18 @@ nav > ul > li > a:focus {
     width: 100%;
     text-align: center;
 }
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Grid System*/
+transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 
 /*Media Queries*/
 /*Medium devices (640px and larger)*/
@@ -226,12 +281,21 @@ nav > ul > li > a:focus {
 }
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
+    
+    .col-lg-7 {
+        width: 58.33%;
     }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}
     
     /*Extra large devices (1440px and larger)*/
 @media only screen and (min-width: 1440px) {
-    }
-    [class*="col-"] {
-        float: left;
-        padding: 10px;
-    }
+    .col-xl-4 {
+        width: 33.33%;  
+
+}
+}
