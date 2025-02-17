@@ -250,18 +250,9 @@ nav > ul > li > a:focus {
     width: 100%;
     text-align: center;
 }
-[class*="col-"] {
-    float: left;
-    padding: 10px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
-/*Grid System*/
-transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+
 
 /*Media Queries*/
 /*Medium devices (640px and larger)*/
@@ -278,12 +269,24 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     .col-md-6 {
         width: 50%;
     }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
     
     .col-lg-7 {
         width: 58.33%;
+    }
+    .col-lg-5 {
+        width: 41.67%;
     }
     .container {
         max-width: 1200px;
@@ -296,6 +299,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 @media only screen and (min-width: 1440px) {
     .col-xl-4 {
         width: 33.33%;  
-
 }
+.col-xl-8 {
+    width: 66.67%;
 }
