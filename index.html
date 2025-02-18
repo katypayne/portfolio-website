@@ -13,27 +13,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d61b6cf08.js" crossorigin="anonymous"></script>
     <title>Katy Payne-Djale UX/UI Designer Seattle</title>
-
 </head>
 
 <body>
     <!--For the header-->
     <header id="header" class="css-box-shadow">
         <div class="container">
-            <a href="index.html">
-                <picture>
-                    <source srcset="./img/logos_palatte/logo_small.png" media="(max-width:767px)">
-                    <img class="logo" src="./img/logos_palatte/logo_large.png" alt="my logo">
-                </picture>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="myNavtoggle" class="navtoggle">
+                <a href="index.html">
+                    <picture>
+                        <source srcset="./img/logos_palatte/logo_small.png" media="(max-width:767px)">
+                        <img class="logo" src="./img/logos_palatte/logo_large.png" alt="my logo">
+                    </picture>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -1647,9 +1651,9 @@
                         <p>This is a sample CSS animation</p>
                     </div><!--End text column-->
                     <div class="column col-md-6 col-lg-5 col-xl-4">
-                </div><!--End of open Expert row-->
-            </div><!--End of Work Wrapper-->
-        </div><!--End of Work Block-->
+                    </div><!--End of open Expert row-->
+                </div><!--End of Work Wrapper-->
+            </div><!--End of Work Block-->
     </main>
 
     <footer id="contact"><!--Footer Block-->
