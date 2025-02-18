@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d61b6cf08.js" crossorigin="anonymous"></script>
     <title>Katy Payne-Djale UX/UI Designer Seattle</title>
 </head>
 
@@ -20,19 +21,23 @@
     <!--For the header-->
     <header class="css-box-shadow">
         <div class="container">
-            <a href="index.html">
-                <picture>
-                    <source srcset="./img/logos_palatte/logo_small.png" media="(max-width:767px)">
-                    <img class="logo" src="./img/logos_palatte/logo_large.png" alt="my logo">
-                </picture>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div id="myNavtoggle" class="navtoggle">
+                <a href="index.html">
+                    <picture>
+                        <source srcset="./img/logos_palatte/logo_small.png" media="(max-width:767px)">
+                        <img class="logo" src="./img/logos_palatte/logo_large.png" alt="my logo">
+                    </picture>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="#contact" onclick="menuToggle ()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                    class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -151,7 +156,8 @@
             <h3>Connect With Me</h3>
             <p>Would you like to work together on your upcoming project? <a href="mailto:katy.payne412@yahoo.com"
                     class="button contact">Email
-                    me</a> or <a href="tel:+12538829263" class="button contact">call me!</a></p>
+                    me</a> or <a href="tel:+12538829263" class="button contact">call me!</a>
+            </p>
             <div><!--Social Media-->
                 <ul>
                     <a href="https://www.instagram.com/katy_payne/" target="_blank"><!--Instagram-->
