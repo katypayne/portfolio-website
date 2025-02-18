@@ -13,7 +13,13 @@ Yellow: f4d58d
 header {
     background-color: fffff5;
     color: #fffff5;
-    text-align: center;
+    padding: 10px 0 4px;
+}
+.logo {
+    max-width: 250px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
 }
 .css-box-shadow {
     /*start ------------*/
@@ -131,6 +137,7 @@ img {
     width: 100%;
     height: auto;
 }
+
 /*Animation Styling*/
 .berlin-illustration {
     width: 100%;
@@ -153,6 +160,7 @@ animation-timing-function: linear;
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/*keyframes*/
 @keyframes color-change {
     0% {fill:#edc655}
     50% {fill:#fcffad}
@@ -201,27 +209,14 @@ animation-timing-function: linear;
     text-align: center;
 }
 
-.logo {
-    width: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    
-}
-nav {
-    background-color: #fffff5;
-    color: #00001c;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-}
+/*Navigation Styling*/
+
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-nav > ul > li {
-    display: inline-block;
-    list-style-type: none;
-}
+
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -242,6 +237,36 @@ nav > ul > li > a:focus {
     color: #00001c;
     text-decoration: underline;
 }
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+    position: relative
+}
+
+.navtoggle.responsive li {
+    display: block; 
+    padding: 10px 0;
+    border-top: 1px solid rgba(46,82,102,1)
+}
+
+.navtoggle.responsive nav { 
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li:last-child {
+padding: 0 0 10px;
+}
+
+
 #hero {
     background-color: #fffff5;
     color: #00001c;
@@ -255,11 +280,13 @@ nav > ul > li > a:focus {
 
 
 /*Media Queries*/
-/*Medium devices (640px and larger)*/
-@media only screen and (min-width: 640px) {
+/*Medium devices (641px and larger)*/
+@media only screen and (min-width: 641px) {
     header {
-        text-align: unset;
         padding: 13px 0 13px;
+    }
+    .logo {
+        width: 300px;
     }
     nav {
         width: auto;
@@ -278,6 +305,21 @@ nav > ul > li > a:focus {
         clear: both;
         display: table;
     }
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0;
+    }
+    nav > ul > li {
+        display: inline-block;
+        list-style-type: none;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
 }
 /*Large devices (1024px and larger)*/
 @media only screen and (min-width: 1024px) {
@@ -293,6 +335,17 @@ nav > ul > li > a:focus {
         margin-left: auto;
         margin-right: auto;
       }
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
 }
     
     /*Extra large devices (1440px and larger)*/
@@ -302,4 +355,15 @@ nav > ul > li > a:focus {
 }
 .col-xl-8 {
     width: 66.67%;}
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0;
+    }
 }
